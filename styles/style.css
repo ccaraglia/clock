@@ -1,0 +1,72 @@
+* {
+
+    position: relative;
+}
+
+p{
+    margin:0;
+}
+
+.container {
+    /*background: radial-gradient(red 5%, yellow 15%, green 60%);*/
+     /* background-color:rgb(10,53,100,radial-gradient);
+    background-image: radial-gradient(circle, #1F3A93, white); */
+    height:100vh;
+    text-align:center;
+}
+
+div
+{
+  width:100%;
+
+  display: table;
+  background:#ccddcc;
+
+}
+
+#timeBar{
+  /*  display:inline-block;  */
+    background-color:pink;
+    height:4px;
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+p#time {
+    position: absolute;
+    top:50%;
+    left:50%;
+transform:translate(-50%, -50%);
+
+  font-size:70px;
+  color:red;
+z-index: 2;
+opacity:1;
+
+}
+
+p#hexa{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+  text-align:center;
+
+
+  font-size:70px;
+  color:green;
+  z-index: 1;
+ opacity:0;
+}
+
+p#time:hover{
+    opacity:0;
+}
+
+p#time:hover +p#hexa{
+opacity:1;
+}
+
